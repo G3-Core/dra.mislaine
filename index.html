@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Mislaine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="switch" onclick="toggleMode()">
+      <button></button>
+      <span></span>
+    </div>
+
+    <div id="profile">
+      <img src="assets/assets/mislaine.jpeg" alt="Foto de Mislaine">
+      <p class="great-vibes-regular">Dra. Mislaine</p>
+    </div>
+
+    <ul>
+      <li>
+        <a href="https://wa.me/5515998222264" target="_blank">WhatsApp</a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/dramislaineribeiro_/" target="_blank">Instagram</a>
+      </li>
+
+      <li>
+        <a href="https://g.co/kgs/dzViWbi" target="_blank"> Localizações e avaliações</a>
+      </li>
+
+      <li>
+        <a href="https://g.co/kgs/dzViWbi" target="_blank">
+          Avalie aqui
+        </a>
+      </li>
+    </ul>
+
+    <div id="social-links">
+      <a href="https://github.com/gustavo-bm" target="_blank">
+        <ion-icon name="logo-google"></ion-icon>
+      </a>
+
+      <a href="mailto:dramislaine.dentista@gmail.com" target="_blank">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+
+      <a href="https://www.instagram.com/dramislaineribeiro_/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+
+      <a href="https://wa.me/5515998222264" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <p>
+      Desenvolvido por
+      <a href="https://g3-core.github.io/website/" target="_blank" rel="noopener noreferrer">
+        G3 Core
+      </a>
+      com muito ❤️
+    </p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function toggleMode() {
+      const html = document.documentElement;
+      html.classList.toggle('light');
+    }
+  </script>
+</body>
+
+</html>
