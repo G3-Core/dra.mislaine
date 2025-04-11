@@ -1,4 +1,4 @@
-name: Deploy Mislaine Website to GitHub Pages
+name: Deploy Dra. Mislaine Website to GitHub Pages
 
 on:
   workflow_dispatch:
