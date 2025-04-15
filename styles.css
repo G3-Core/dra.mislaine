@@ -5,33 +5,61 @@
   box-sizing: border-box;
 }
 
-/* Variáveis CSS para cores */
+/* Variáveis CSS para cores - Modo Escuro (Padrão) */
 :root {
+  /* Cores de texto e acentos */
   --text-color: #f3ece3; /* Bege claro para texto no modo escuro */
-  --stroke-color: rgba(255, 238, 221, 0.5); /* Bege claro translúcido para bordas no modo escuro */
-  --surface-color: rgba(255, 238, 221, 0.1); /* Bege claro translúcido para superfícies no modo escuro */
-  --surface-color-hover: rgba(255, 238, 221, 0.2); /* Bege claro translúcido para hover no modo escuro */
-  --social-link-hover-color: rgba(255, 238, 221, 0.1); /* Bege claro translúcido para hover nos links sociais no modo escuro */
-  --switch-bg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23121212' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E");
   --accent-color: #a08e7c; /* Marrom médio para acentos */
-  --button-bg-color: #a08e7c; /* Marrom médio para botões */
-  --button-text-color: #f3ece3; /* Bege claro para texto dos botões */
+  
+  /* Cores de superfície */
+  --stroke-color: rgba(243, 236, 227, 0.4); /* Bordas no modo escuro */
+  --surface-color: rgba(243, 236, 227, 0.1); /* Superfícies no modo escuro */
+  --surface-color-hover: rgba(243, 236, 227, 0.2); /* Hover no modo escuro */
+  --social-link-hover-color: rgba(243, 236, 227, 0.15); /* Hover nos links sociais */
+  
+  /* Cores de botão */
+  --button-bg-color: #0E0A07; /* Cor escura para botões no modo escuro */
+  --button-text-color: #f3ece3; /* Texto claro para botões no modo escuro */
+  
+  /* Background e gradientes */
+  --bg-gradient: linear-gradient(135deg, #281E15 0%, #14110C 50%, #32281F 100%);
+  
+  /* Switch (Alternador de tema) */
+  --switch-bg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23121212' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 /* Estilos para modo claro */
 .light {
-  --text-color: #543d34; /* Marrom escuro para texto no modo claro */
-  --stroke-color: rgba(84, 61, 52, 0.5); /* Marrom escuro translúcido para bordas no modo claro */
-  --surface-color: rgba(243, 236, 227, 0.5); /* Bege claro translúcido para superfícies no modo claro (mais visível) */
-  --surface-color-hover: rgba(243, 236, 227, 0.8); /* Bege claro translúcido para hover no modo claro (mais visível) */
-  --social-link-hover-color: rgba(243, 236, 227, 0.2); /* Marrom escuro translúcido para hover nos links sociais no modo claro */
+  /* Cores de texto e acentos */
+  --text-color: #32281F; /* Marrom escuro para texto no modo claro */
+  --accent-color: #281E15; /* Marrom escuro para acentos */
+  
+  /* Cores de superfície */
+  --stroke-color: rgba(50, 40, 31, 0.3); /* Bordas no modo claro */
+  --surface-color: rgba(243, 236, 227, 0.6); /* Superfícies no modo claro */
+  --surface-color-hover: rgba(243, 236, 227, 0.8); /* Hover no modo claro */
+  --social-link-hover-color: rgba(243, 236, 227, 0.4); /* Hover nos links sociais */
+  
+  /* Cores de botão */
+  --button-bg-color: #6B5844; /* Marrom mais claro para botões no modo claro */
+  --button-text-color: #f3ece3; /* Texto claro para botões no modo claro */
+  
+  /* Background e gradientes */
+  --bg-gradient: linear-gradient(135deg, #f7f2eb 0%, #ede6dc 50%, #e1d8ca 100%);
+  
+  /* Switch (Alternador de tema) */
   --switch-bg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f3ece3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3Cline x1='12' y1='1' x2='12' y2='3'%3E%3C/line%3E%3Cline x1='12' y1='21' x2='12' y2='23'%3E%3C/line%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3E%3C/line%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3E%3C/line%3E%3Cline x1='1' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='21' y1='12' x2='23' y2='12'%3E%3C/line%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3E%3C/line%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3E%3C/line%3E%3C/svg%3E");
-  --accent-color: #543d34; /* Marrom escuro para acentos */
-  --button-bg-color: #f3ece3; /* Bege claro para botões */
-  --button-text-color: #543d34; /* Marrom escuro para texto dos botões */
 }
 
 /* Estilos de texto */
+.ig-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--text-color);
+  margin-top: 12px;
+}
+
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -50,18 +78,14 @@
 
 /* Estilos do corpo */
 body {
-  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6), #121212);
+  background: var(--bg-gradient);
   transition: background 0.5s ease;
-}
-
-.light body {
-  background: radial-gradient(circle at center, rgba(243, 236, 227, 0.8), #f3ece3);
 }
 
 body * {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Estilos do container */
@@ -76,7 +100,6 @@ body * {
 /* Estilos do perfil */
 #profile {
   text-align: center;
-  padding: 24px;
 }
 
 #profile img {
@@ -85,14 +108,14 @@ body * {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--accent-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #profile p {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
-  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Estilos do switch */
@@ -157,7 +180,7 @@ ul li a {
   color: var(--button-text-color);
   border: none;
   border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -166,13 +189,13 @@ ul li a {
 ul li a:hover {
   cursor: pointer;
   transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
   opacity: 0.9;
 }
 
 /* Estilos dos links sociais */
 #social-links {
-  padding: 24px 0;
+  padding: 24px 16px 8px;
   display: flex;
   justify-content: center;
   gap: 20px;

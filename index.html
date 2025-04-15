@@ -38,7 +38,7 @@
 
     <div id="profile">
       <img src="assets/mislaine2.jpeg" alt="Foto de Mislaine">
-      <p class="great-vibes-regular">Dra. Mislaine Ribeiro</p>
+      <p class="ig-name">@dramislaineribeiro_</p>
     </div>
 
     <ul>
@@ -96,15 +96,9 @@
   <script>
     function toggleMode() {
       const html = document.documentElement;
-      const body = document.body;
 
-      if (html.classList.contains('light')) {
-        html.classList.remove('light');
-        body.style.background = "radial-gradient(circle at center, rgba(0, 0, 0, 0.6), #121212)";
-      } else {
-        html.classList.add('light');
-        body.style.background = "radial-gradient(circle at center, rgba(255, 255, 255, 0.8), #f3ece3)";
-      }
+      // Alterna a classe 'light' no elemento HTML
+      html.classList.toggle('light');
     }
   </script>
 </body>
